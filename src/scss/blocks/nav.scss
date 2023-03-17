@@ -1,0 +1,34 @@
+.nav {
+  margin: 4em 0;
+  display: none;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+
+  &__link {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.03em;
+    color: #686868;
+
+    &:hover,
+    &:focus {
+      color: #2F70D9;
+    }
+  }
+
+  @media (min-width: 1050px) {
+    display: block;
+    padding-left: 1em;
+    margin: 0;
+
+    &__list {
+      flex-direction: row;
+      gap: 3em;
+    }
+  }
+}

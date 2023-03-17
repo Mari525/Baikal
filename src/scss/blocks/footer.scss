@@ -1,0 +1,143 @@
+.footer {
+  max-width: none;
+  padding-top: 40px;
+  padding-bottom: 25px;
+  margin-top: 30px;
+
+  background-color: #282828;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__nav,
+  &__arrow-wrapper {
+    display: none;
+  }
+
+  &__logo {
+    width: 108px;
+    height: 27px;
+  }
+
+  &__heading {
+    margin-bottom: 10px;
+
+    font-family: 'Lora', Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2.6rem;
+    letter-spacing: 0.03em;
+    color: #2F70D9;
+  }
+
+  &__book-btn {
+    width: 210px;
+    height: 40px;
+    margin-bottom: 15px;
+    display: block;
+
+    background-color: #D95845;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    color: #FFFFFF;
+
+    &:hover {
+      color: #D95845;
+      background-color: #FFFFFF;
+    }
+
+  }
+
+  &__callback-btn {
+    width: 210px;
+    height: 40px;
+
+    border: 2px solid #2F70D9;
+    border-radius: 5px;
+    background: none;
+
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 2.5rem;    
+    letter-spacing: 0.03em;
+    color: #2F70D9;
+
+    &:hover {
+      background-color: #2F70D9;
+      color: #FFFFFF;
+    }
+    
+  }
+
+  &__address {
+    display: block;
+    margin: 0;
+  }
+
+  .address__address,
+  .address__bold,
+  .address__phone {
+    color: #FFFFFF;
+  }
+
+
+  @media (min-width: 1050px) {
+    margin-top: 0;
+
+    &__wrapper {
+      max-width: 1230px;
+      margin: 0 auto;
+  
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 1em;
+    }
+
+    &__nav,
+    &__arrow-wrapper {
+      display: block;
+    }
+
+    &__logo {
+      width: 180px;
+      height: 45px;
+    }
+
+    &__heading {
+      margin: 0;
+      margin-bottom: 20px;
+    }
+
+    &__list {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    &__link {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 25px;      
+      letter-spacing: 0.03em;      
+      color: #FFFFFF;
+    }
+
+    &__arrow-wrapper {
+      align-self: center;
+    }
+
+    &__arrow {
+      background: none;
+      border: none;
+    }
+  }
+}

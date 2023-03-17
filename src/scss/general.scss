@@ -5,6 +5,26 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
 .visually-hidden {
   position: absolute;
   clip: rect(1px, 1px, 1px, 1px);
@@ -13,4 +33,34 @@
   height: 1px;
   width: 1px;
   overflow: hidden;
+}
+
+header,
+section,
+footer {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.heading {
+  font-family: 'Lora', Georgia, 'Times New Roman', Times, serif;
+  font-weight: 700;
+  font-size: 3em;
+  line-height: 3.8rem;
+  letter-spacing: 0.03em;
+  color: #2F70D9;
+}
+
+@media (min-width: 1050px) {
+  header,
+  section,
+  footer {
+    max-width: 1230px;
+    margin: 0 auto;
+  }
+
+  .heading {
+    font-size: 5rem;
+    line-height: 6.4rem;
+  }
 }

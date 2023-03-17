@@ -1,0 +1,67 @@
+.room {
+  padding: 30px 10px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+  border: 3px solid #2F70D9;
+  border-radius: 20px;
+
+  &__img {
+    height: 80px;
+  }
+
+  &__heading {
+    font-family: 'Lora', Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2.6rem;
+    letter-spacing: 0.03em;
+    color: #2F70D9;
+  }
+
+  &__list {
+    list-style: disc;
+    align-self: flex-start;
+    margin-left: 31px;
+  }
+
+  &__item {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.3rem;
+    letter-spacing: 0.03em;
+    color: #686868;
+
+    &:not(:last-of-type) {
+      margin-bottom: 13px;
+    }
+  }
+
+  &__span {
+    font-family: 'Lora', Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    letter-spacing: 0.03em;
+    color: #2F70D9;
+  }
+
+  &__price {
+    font-family: 'Lora', Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 3.2rem; 
+    letter-spacing: 0.03em; 
+    color: #D95845;
+  }
+
+
+  @media (min-width: 1050px) {
+    &__img {
+      height: 110px;
+    }
+  }
+}

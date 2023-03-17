@@ -1,0 +1,62 @@
+.address {
+  // display: block;
+  display: none;
+  margin-top: 4em;
+
+  &__bold {
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    letter-spacing: 0.05em;
+    color: #686868;
+  }
+
+  &__address {
+    margin-top: 5px;
+    margin-bottom: 15px;
+
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    letter-spacing: 0.03em;
+    color: #686868;
+  }
+
+  &__phone {
+    display: block;
+    margin-bottom: 15px;
+
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 2.7rem;
+    letter-spacing: 0.03em;      
+    color: #000000;
+
+    &:first-of-type {
+      margin-bottom: 5px;
+    }
+  }
+
+  &__messangers {
+    display: flex;
+  }
+
+  &__messanger {
+    margin-right: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+  }
+
+  &__viber {
+    background: #C652EE;
+  }
+
+  &__whatsapp {
+    background: #A7D91A;
+  }
+}

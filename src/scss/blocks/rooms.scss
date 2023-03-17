@@ -1,0 +1,44 @@
+.rooms {
+
+  padding: 0 2.4em;
+
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  &__img {
+    display: none;
+  }
+
+  @media (min-width: 1050px) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    &__wrapper {
+      gap: 30px;
+    }
+
+    &__list {
+      margin-top: 30px;
+      gap: 30px;
+    }
+  }
+
+  @media (min-width: 1245px) {
+    &__img {
+      display: block;
+      width: 287px;
+    }
+  }
+}

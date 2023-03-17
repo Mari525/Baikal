@@ -1,0 +1,78 @@
+.offer {
+
+  padding: 50px 2.4em;
+
+  &__list {
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 30px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  &__item {
+    width: 110px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+  }
+
+  &__heading {
+    margin-top: 10px;
+    margin-bottom: 5px;
+
+    font-family: "Lora", Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.03em;
+    color: #2F70D9;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.4rem;
+    color: #686868;
+  }
+
+  &__img {
+    width: 36px;
+  }
+
+  @media (min-width: 1050px){
+
+    &__list {
+      margin-top: 80px;
+    }
+
+    &__item {
+      width: 237px;
+    }
+
+    &__heading {
+      margin-top: 20px;
+      margin-bottom: 10px;
+
+      font-size: 2rem;
+      line-height: 2.6rem;
+    }
+
+    &__text {
+      font-size: 1.4rem;
+      line-height: 2rem;
+    }
+    
+    &__img {
+      width: 75px;
+    }
+
+  }
+
+}

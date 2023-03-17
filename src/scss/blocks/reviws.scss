@@ -1,0 +1,17 @@
+.reviews {
+  padding: 60px 2.4em 0;
+
+  &__list {
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  @media (min-width: 1050px) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
